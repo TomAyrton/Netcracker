@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Sports Analytical Marathon</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="overlay" id='overlay'>
+		<form class="authorization" action="">
+			<fieldset>
+				<legend>
+					Вход
+				</legend>
+				<input type="email" name='email' placeholder="E-mail" required>
+				<input type="password" name='password' placeholder='Password' required>
+				<button id='overlay-btn'>Войти</button>
+				<div class="registration">
+					<a href="#">Зарегистрироваться</a>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<header class="header">
+		<div class="logo">
+			Sports <br> Analytical <br> Marathon
+		</div>
+		<nav class="nav" id='nav'>
+			<div class="nav-item"><a href="#">Главная</a></div>
+			<div class="nav-item"><a href="#">Статистика</a></div>
+			<div class="nav-item">
+				<a href="#">Статьи</a><span class="arrow-bottom">&#8249;</span>
+				<div class='articles'>
+					<div class="articles-block">
+						<li class="articles-item"><a href="#">Новости</a></li>
+						<li class="articles-item"><a href="#">Матчи</a></li>
+						<li class="articles-item"><a href="#">Трансферы</a></li>
+					</div>
+				</div>
+			</div>
+			<div class="nav-item"><a href="#">Медиа</a></div>
+			<div class="nav-item"><a href="#">Наша команда</a></div>
+		</nav>
+		<div class="burger" id='burger'>
+			<div class="line">
+			</div>
+		</div>
+		<div class="logIn" onclick='auth()'>
+			Личный кабинет
+		</div>
+	</header>
+
+	<main class="main">
+		<article class="primary">
+			<div class="content">
+				<h1>
+					Прогнозы на футбол
+				</h1>
+				<p>
+					Привет, друг! Ты попал на сайт профессионального футбольного каппера, который специализируется на самых крутых лигах Европы. Я не могу гарантировать прибыльность ставок и обещать 100% заход (это спорт), но сделаю все, чтобы на дистанции по нашим прогнозам у тебя был профит. Регистрируйся и следи за бесплатными прогнозами или приобретай подписку на платные прогнозы. Буду очень рад, если наши интеллектуальные труды тебе помогут:)
+				</p>
+				<div class="next-screen">
+					<a href="#2"><img src="assets/images/arrow.png" alt=""></a>
+				</div>
+			</div>
+		</article>
+		<article class="advantages" id='2'>
+			<div class="content">
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<h1>
+								Более 5 лет опыта
+							</h1>
+						</div>
+						<div class="back">
+							<p>
+								Компания была основана в 2013 году двумя аналитиками. Сейчас нас уже больше 30!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<h1>
+								Честная статистика
+							</h1>
+						</div>
+						<div class="back">
+							<p>
+								Каждый наш прогноз записывается в историю, которую может посмотреть любой желающий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+					<div class="flipper">
+						<div class="front">
+							<h1>
+								Собственный медиа-проект
+							</h1>
+						</div>
+						<div class="back">
+							<p>
+								Мы часто публекуем развлекательный и обучающий контент, в котором наши спциалисты деляться своими взглядами.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+	<footer class="footer">
+
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
